@@ -1,1 +1,56 @@
+/* estilos.css */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff0f5; /* rosa claro */
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  color: #d63384; /* fucsia oscuro */
+  text-align: center;
+}
+
+.ciclo {
+  border: 2px solid #d63384;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 20px 0;
+  background-color: #ffe6f0; /* fondo rosado pastel */
+}
+
+.ciclo h2 {
+  color: #b30059;
+}
+
+.curso {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  gap: 10px;
+}
+
+.curso button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid #d63384;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.curso button.aprobado {
+  background-color: #d63384;
+}
+
+.curso span {
+  flex: 1;
+  font-size: 16px;
+}
+
+/* Cursos bloqueados por requisito (no aprobados aún) */
+.curso[style*=\"opacity: 0.5\"] span {
+  color: #999;
+}
 
